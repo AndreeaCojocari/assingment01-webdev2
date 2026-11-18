@@ -8,11 +8,11 @@ const designerData = {
 document.getElementById('designerName').textContent = `About ${designerData.name}`;
 document.getElementById('designerBio').textContent = `I am currently studying ${designerData.course} at ${designerData.college}.`;
 
-const hobbiesString = designerData.hobbies.join(", ").toUpperCase();
+const hobbiesString = designerData.hobbies.join(", ").toUpperCase(); //makes it a string n capitals 
 document.getElementById('designerMeta').textContent = `My Interests: ${hobbiesString}`;
 
-const today = new Date();
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const today = new Date(); 
+const options = { year: 'numeric', month: 'long', day: 'numeric' }; //mongth name
 document.getElementById('dataInfo').textContent = `Website last updated on: ${today.toLocaleDateString('en-IE', options)}`;
 
 const features = ["Flexbox Layout", "JavaScript DOM Manipulation", "JSON Objects", "Search & Filter", "Dynamic Dates & Math"];
